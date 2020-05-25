@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/windowBackground"
+        android:padding="20dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/crdNumber"
+            android:layout_width="match_parent"
+            app:cardBackgroundColor="@android:color/white"
+            android:layout_centerInParent="true"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="10dp"
+            android:layout_height="50dp">
+
+            <EditText
+                android:id="@+id/etMobNumberOtp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:singleLine="true"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textSize="14sp"
+                android:background="@null"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/hintTextColor"
+                android:hint="@string/enter_mobile_number"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSubmit"
+            android:layout_width="220dp"
+            android:text="@string/submit"
+            android:layout_below="@+id/crdNumber"
+            android:backgroundTint="@android:color/black"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="20dp"
+            app:cornerRadius="10dp"
+            android:layout_height="60dp"/>
+
+    </RelativeLayout>
+</layout>

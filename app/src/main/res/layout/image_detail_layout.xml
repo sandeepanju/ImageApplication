@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="imageDetailActivity"
+            type="com.example.image_app.ui.main.activity.ImageDetailActivity" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rvImg"
+            android:layout_width="match_parent"
+            android:layout_height="450dp">
+
+            <ImageView
+                android:id="@+id/imgLarge"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:transitionName="imgMain"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/dummy_bird" />
+
+            <include
+                android:id="@+id/header"
+                layout="@layout/back_button_layout"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                bind:imageDetailActivity="@{imageDetailActivity}" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/crdImgDetail"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="20dp"
+                android:transitionName="cardDetail"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="1dp">
+
+                <TextView
+                    android:id="@+id/tvCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="image 1"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/crdImgDownload"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp">
+
+                <TextView
+                    android:id="@+id/tvDownload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/download"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@drawable/ic_download"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rvImg"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/yellow"
+            android:paddingStart="20dp">
+
+            <TextView
+                android:id="@+id/tvSwipeUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/standard_text_swipe_up"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvSwipeLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="50dp"
+                android:text="@string/fixed_text_swipe_from_left"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

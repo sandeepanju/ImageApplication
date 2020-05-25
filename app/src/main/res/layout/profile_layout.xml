@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="userProfileActivity"
+            type="com.example.image_app.ui.main.activity.UserProfileActivity" />
+
+    </data>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgLarge"
+            android:layout_width="match_parent"
+            android:src="@drawable/dummy_bird"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:layout_height="200dp"/>
+
+        <include
+            android:id="@+id/header"
+            bind:userProfileActivity="@{userProfileActivity}"
+            layout="@layout/back_button_layout"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_height="30dp"
+            android:layout_width="80dp" />
+
+
+        <View
+            android:id="@+id/viewBorder"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/imgLarge"
+            android:layout_marginTop="10dp"
+            android:background="@color/blue"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/viewBorder"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp">
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name"
+                android:enabled="false"
+                android:backgroundTint="@color/hintTextColor"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/hintTextColor"
+               />
+
+            <EditText
+                android:id="@+id/etNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/phone_number"
+                android:enabled="false"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/hintTextColor"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/hintTextColor"
+                android:layout_below="@id/etName"/>
+
+            <EditText
+                android:id="@+id/etGHI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/ghi"
+                android:layout_marginTop="20dp"
+                android:enabled="false"
+                android:backgroundTint="@color/hintTextColor"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/hintTextColor"
+                android:layout_below="@id/etNumber"/>
+
+            <EditText
+                android:id="@+id/etJHL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/ghi"
+                android:layout_marginTop="20dp"
+                android:enabled="false"
+                android:backgroundTint="@color/hintTextColor"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/hintTextColor"
+                android:layout_below="@id/etGHI"/>
+
+
+            <ImageView
+                android:id="@+id/imgCalender"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/etJHL"
+                app:srcCompat="@drawable/ic_calendar"/>
+
+            <EditText
+                android:id="@+id/etLMN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/lmn"
+                android:layout_marginTop="20dp"
+                android:enabled="false"
+                android:backgroundTint="@color/hintTextColor"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/hintTextColor"
+                android:layout_below="@id/imgCalender"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</layout>

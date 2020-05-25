@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:paddingBottom="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/crdImgDetail"
+            android:transitionName="cardDetail"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="1dp">
+
+            <TextView
+                android:id="@+id/tvCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="image 1"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="200sp"
+            android:transitionName="imgMain"
+            android:scaleType="fitXY"
+            android:src="@drawable/dummy_bird" />
+
+    </RelativeLayout>
+</layout>

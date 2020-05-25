@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ImageApp</string>
+    <string name="image">image</string>
+    <string name="enter_mobile_number">Enter Mobile Number</string>
+    <string name="submit">Submit</string>
+    <string name="name">Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="ghi">GHI</string>
+    <string name="jhl">JHL</string>
+    <string name="lmn">LMN</string>
+    <string name="please_enter_valid_number">Please Enter Valid Number</string>
+    <string name="enter_otp">Enter Otp</string>
+    <string name="standard_text_swipe_up">Standard Text that swipes up</string>
+    <string name="fixed_text_swipe_from_left">fixed text which swipes from left</string>
+    <string name="download">Download</string>
+    <string name="image_downloaded_sucessfully">image downloaded sucessfully check folder ImageApp</string>
+</resources>

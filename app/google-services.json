@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "915172361234",
+    "firebase_url": "https://khoslaweatherapp.firebaseio.com",
+    "project_id": "khoslaweatherapp",
+    "storage_bucket": "khoslaweatherapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:915172361234:android:a242352b3d038c416584cb",
+        "android_client_info": {
+          "package_name": "com.example.imageapp.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "915172361234-hq5d6qrorp8v2q5li97rfvbhpletdcmg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.imageapp.debug",
+            "certificate_hash": "6ba423a729c8f409670c5df90d3caf7ae3bfbcfe"
+          }
+        },
+        {
+          "client_id": "915172361234-dc4ml4fiorthcjr9erpa67srpatio1i6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFz_zl-n6GnyRjompCYkflyxquMCaN9jk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "915172361234-dc4ml4fiorthcjr9erpa67srpatio1i6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
