@@ -60,7 +60,7 @@ class ImageDetailActivity : BaseActivity<ImageDetailLayoutBinding, ProfileViewMo
         binding.tvSwipeLeft.startAnimation(animSlideLeft)
         binding.tvCount.text =
             "${this.resources.getString(R.string.image)} ${imageData.position}"
-        Picasso.get().load(imageData.urls.small).error(R.drawable.ic_suggestion)
+        Picasso.get().load(imageData.urls.thumb).error(R.drawable.ic_suggestion)
             .into(binding.imgLarge)
     }
 
